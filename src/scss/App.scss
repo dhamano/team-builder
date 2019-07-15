@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.form-container {
+  padding-bottom: 1.25rem;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+
+  h2 {
+    margin-top: 0;
+    padding-top: 0.5rem;
+  }
+
+  input, select, label {
+    margin-left: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.25em;
+  }
+
+  input, select {
+    border: solid 1px #ccc;
+  }
+
+  label[for="role"] {
+    position: relative;
+    
+    &::after {
+      $border-color: #000;
+      $border-transparent: transparent;
+      content: '';
+      width: 0;
+      height: 0;
+      display: block;
+      border-top: solid 5px $border-transparent;
+      border-right: solid 5px $border-transparent;
+      border-bottom: solid 5px $border-color;
+      border-left: solid 5px $border-color;
+      position: absolute;
+      right: 0.63rem;
+      top: 1px;
+      transform: rotate(-45deg);
+      pointer-events: none;
+    }
+  }
+
+  select {
+    appearance: none;
+  }
+}
+
+.team-list {
+
+  table {
+    margin: 1.25rem auto;
+    border-collapse: collapse;
+
+    tr {
+      padding: 0;
+
+      &:nth-child(2n+1) {
+        background-color: rgba(238, 238, 238,0.5);
+      }
+    }
+    
+    td {
+      padding: 0.5rem;
+
+      &:nth-child(2n+1) {
+        font-weight: bold;
+      }
+
+      input, select {
+        font-size: 1rem;
+      }
+    }
+  }
+}

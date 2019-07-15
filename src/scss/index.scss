@@ -1,0 +1,22 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #bf26a0; /* Old browsers */
+  background: -moz-linear-gradient(top,  #bf26a0 0%, #89fbff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #bf26a0 0%,#89fbff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #bf26a0 0%,#89fbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf26a0', endColorstr='#89fbff',GradientType=0 ); /* IE6-9 */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import "./App";
