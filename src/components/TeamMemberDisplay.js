@@ -45,19 +45,21 @@ const TeamMemberDisplay = props => {
             <td>{isEditing ? <input type="email" name="email" id="email" onChange={onChangeHandler} value={formInfo.email} /> : props.teamMember.email}</td>
             <td>Role:</td>
             <td>{isEditing ? (
-                <select onChange={onChangeHandler} value={formInfo.role} name="role" id="role" required>
-                    <option value="">Pick a role</option>
-                    <option value="Backend Engineer">Backend Engineer</option>
-                    <option value="Frontend Engineer">Frontend Engineer</option>
-                    <option value="Web Designer">Web Designer</option>
-                    <option value="UX Designer">UX Designer</option>
-                    <option value="Product Manager">Product Manager</option>
-                    <option value="Team Lead">Team Lead</option>
-                </select>
+                <label htmlFor="role">
+                    <select onChange={onChangeHandler} value={formInfo.role} name="role" id="role" required>
+                        <option value="">Pick a role</option>
+                        <option value="Backend Engineer">Backend Engineer</option>
+                        <option value="Frontend Engineer">Frontend Engineer</option>
+                        <option value="Web Designer">Web Designer</option>
+                        <option value="UX Designer">UX Designer</option>
+                        <option value="Product Manager">Product Manager</option>
+                        <option value="Team Lead">Team Lead</option>
+                    </select>
+                </label>
              ) : props.teamMember.role}</td>
             <td>
                 { isEditing ?
-                    <button className="edit" onClick={saveChanges}>Save</button>
+                    <button className="save" onClick={saveChanges}>Save</button>
                 :
                     <button className="edit" onClick={editTeamMember}>Edit</button> 
                 }
